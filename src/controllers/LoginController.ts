@@ -6,6 +6,6 @@ import { controller, get } from './decorators';
 export class LoginController {
   @get('/login')
   getLogin(req: Request, res: Response): void {
-    res.send('hi');
+    res.render('login');
   }
 }

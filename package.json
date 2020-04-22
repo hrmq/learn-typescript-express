@@ -12,18 +12,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/express": "^4.17.6",
     "@types/body-parser": "^1.19.0",
     "@types/cookie-session": "^2.0.39",
+    "@types/express": "^4.17.6",
+    "@types/morgan": "^1.9.0",
+    "@types/pug": "^2.0.4",
     "concurrently": "^5.1.0",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "reflect-metadata": "^0.1.13"
   },
   "dependencies": {
-    "@types/morgan": "^1.9.0",
     "body-parser": "^1.19.0",
     "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "reflect-metadata": "^0.1.13"
+    "pug": "^2.0.4"
   }
 }

@@ -12,6 +12,8 @@ const app: express.Application = express();
 
 // Express.js configuration
 app.set('port', process.env.port || 3000);
+app.set('view engine', 'pug');
+app.use(express.static('views'));
 
 // Express.js middleware configuration
 app.use(bodyParser.json({ limit: '100kb' }));
