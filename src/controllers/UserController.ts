@@ -1,10 +1,9 @@
 import { Request, Response } from 'express';
+import { Controller, Get } from '@overnightjs/core';
 
-import { controller, get } from './decorators';
-
-@controller('')
-export class LoginController {
-  @get('/login')
+@Controller('user')
+export class UserController {
+  @Get('login')
   getLogin(req: Request, res: Response): void {
     res.render('login');
   }
