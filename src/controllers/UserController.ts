@@ -7,4 +7,9 @@ export class UserController {
   getLogin(req: Request, res: Response): void {
     res.render('login');
   }
+
+  @Get('logout')
+  getLogout(req: Request, res: Response): void {
+    res.redirect('/');
+  }
 }
